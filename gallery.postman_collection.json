@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "997732fc-a6b3-4bce-899a-c46c23ac1ba5",
+		"name": "gallery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pictures",
+			"item": [
+				{
+					"name": "localhost:420/api/picture",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/vjasieg/Desktop/117337943_192170282251724_1721450916857086303_n.jpg"
+								},
+								{
+									"key": "album",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "halo",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:420/api/picture",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"picture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/picture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/picture",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"picture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/picture/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/picture/1",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"picture",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/picture/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/picture/1",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"picture",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "albums",
+			"item": [
+				{
+					"name": "localhost:420/api/album",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/album",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"album"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/album/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/album/3",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"album",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/album",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "album_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "album_description",
+									"value": "test2",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:420/api/album",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"album"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/album/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/album/5",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"album",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "localhost:420/api/comments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "nickname",
+									"value": "halo",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "debil",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:420/api/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/comments/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/comments/2",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"comments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:420/api/comments/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:420/api/comments/2",
+							"host": [
+								"localhost"
+							],
+							"port": "420",
+							"path": [
+								"api",
+								"comments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:420/api/gallery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:420/api/gallery",
+					"host": [
+						"localhost"
+					],
+					"port": "420",
+					"path": [
+						"api",
+						"gallery"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
